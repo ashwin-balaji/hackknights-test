@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="lib.css" type="text/css" />
+<title>library mangement</title>
+ <style>
+.button {
+    position: relative;
+    background-color:#000;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+</style>
+</head>
+<body>
+<body background="cabinet.jpg">
+<div class="logo"><font size="20"><h1><i><center>Library</i></h1></font></div>
+<p>
+<center><h2>The knowledge Room</h2></center>
+</p>
+
+
+
+
+<div id="sign-up">
+
+<Center>
+<form action="signup.php" method="POST">
+<p><label>Name </label><input name="Name" placeholder="Name" type="text" required="required"/></br></br>
+<label>Roll no </label><input name="Roll_no" placeholder="Rollno" type="text" required="required"/></br></br>
+<label>Year </label><input name="Year" placeholder="Year" type="number" required="required"/> </br></br>
+<label>Dept </label><input name="Dept" placeholder="Dept" type="text" required="required"/></br></br>
+<label>Reg No </label><input name="Reg_no" placeholder="Regno" type="number"  required="required"/></br></br>
+<label>Section </label><input name="Section" placeholder="Section" type="text" required="required"/></br></br>
+<label>Batch </label><input name="Batch" placeholder="Batch" type="text"  required="required"/></br></br></p>
+<button class="button" type="submit">Submit</button>
+</Center></form>
+
+</div>
+
+
+<div id="footer"><center></br></br></br></br></br></br></br></br></br></br></br>
+<h3>copyrights @ M4</h3>
+</center></div>
+</body>
+</html>

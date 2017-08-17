@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form</title>
+<link rel="stylesheet" href="css/form.css">
+<link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body bgcolor="#339900">
+<center><img src="sri.png" width="1360" height="250"></center>
+
+<div class="logout" style="float:right">
+<a href="login.html"><input type="submit" value="Log Out" /></a>
+</div>
+
+<div class="back" style="float:left">
+<a href="search.html"><input type="submit" value="Back" /></a>
+</div>
+<br /><br />
+<form action="insert_into.php" method="post">
+<table border="6" height="40" width="400" align="center" bgcolor="#CF0" bordercolor="#000">
+<tr>
+<td colspan="2" align="center"><h3>STUDENT DETAILS</h3></td>
+</tr>
+<tr>
+<td>Roll No:</td>
+<td><input type="text" name="rollno" placeholder="Enter your roll number" required="reqiured" /></td>
+</tr>
+<tr>
+<td>Name:</td>
+<td><input type="text" name="name" placeholder="Enter the name"  /></td>
+</tr>
+<tr>
+<td>Quota:</td>
+<td><input type="text" name="Quota" placeholder="MQ\GQ"/></td>
+</tr
+><tr>
+<td>First Graduate:</td>
+<td><input type="text" name="FirstGraduate" placeholder="Yes\No"/>
+</td>
+</tr>
+<tr>
+<td>Receipt Number:</td>
+<td><input type="text" name="ReceiptNo" placeholder="Enter the receipt number" /></td>
+</tr>
+<tr>
+<td>DD Number:</td>
+<td><input type="number" maxlength="11" name="DDNo" placeholder="Enter the DD number" /></td>
+</tr><br />
+<tr>
+<td>Tuition Fee:</td>
+<td><input type="number" maxlength="11" name="TuitionFee" placeholder="Enter the Tuition fee" /></td>
+</tr>
+<tr>
+<td>Other Fees:</td>
+<td><input type="number" maxlength="11" name="OtherFees" placeholder="Enter the Other Fee" /></td>
+</tr>
+<td>Book Uniform:</td>
+<td><input type="number" maxlength="11" name="BookUniform" placeholder="Enter the Book and Uniform Fees" /></td>
+</tr>
+<tr>
+<td>Bus Fees:</td>
+<td><input type="number" maxlength="11" name="BusFees" placeholder="Enter the Bus Fee" /></td>
+</tr>
+<tr>
+<td>Donation:</td>
+<td><input type="number" maxlength="11" name="Donation" placeholder="Enter the Donation amount" /></td>
+</tr>
+<tr>
+<td>Hostel Fee:</td>
+<td><input type="number" maxlength="11" name="HostelFee" placeholder="Enter the Hostel Fee" /></td>
+</tr>
+<tr>
+<td>Caution Deposits:</td>
+<td><input type="number" maxlength="11" name="CautionDeposits" placeholder="Enter the Caution Deposit amount" /></td>
+</tr>
+<tr>
+<td>Total:</td>
+<td><input type="number" maxlength="11" name="Total" placeholder="Enter the Total Amount" /></td>
+</tr>
+<tr>
+<td>Balance:</td>
+<td><input type="number"  maxlength="11" name="Balance" placeholder="Balance amount" /></td>
+</tr>
+<td>Date:</td><td>
+<input type="date" name="date"  /></td></tr>
+<tr>
+<td><br /></td><td><div class="sub"><input type="submit" name="insert" value="SUBMIT" /></div></td></tr>
+<tr>
+</table>
+</form>
+</body>
+</html>

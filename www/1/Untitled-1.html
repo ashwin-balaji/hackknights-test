@@ -1,0 +1,222 @@
+<?php
+$rollno="";
+$name="";
+$dsn='mysql:dbname=batch_2014_2018;host=127.0.0.1';
+
+if(isset($_POST['Search']))
+{
+    try {
+        $pdoConnect = new PDO($dsn,"root","root");
+    } catch (PDOException $exc) {
+        echo $exc->getMessage();
+        exit();
+    }
+    $rollno=$_POST['rollno'];
+    $pdoQuery = "SELECT * FROM batch_2014_2018_cse WHERE Roll No = ".$rollno;
+    $pdoResult = $pdoConnect->prepare($pdoQuery);
+    $pdoExec = $pdoResult->execute(array(":rollno"=>$rollno));    
+    if($pdoExec)
+    {
+        if($pdoResult->rowCount()>0)
+        {
+            foreach($pdoResult as $row)
+            {
+                $rollno = $row['Roll No'];
+				 $name = $row['Name'];
+            }
+			header('location:searchResultSuccess.html');
+			echo 'Roll No : '.$rollno .'<br>'. 'Name : '.$name;
+        }
+        else{
+            echo 'No Data With This Rollno';
+			header('location:searchFail.html');
+        }
+    }else{
+        echo 'ERROR Data Not Inserted';
+    }
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form</title>
+<link rel="stylesheet" href="css/form.css">
+<link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body bgcolor="#339900">
+
+<center><img src="sri.png" width="1360" height="250"></center>
+
+<div class="logout" style="float:right">
+<a href="login.html"><input type="submit" value="Log Out" /></a>
+</div>
+
+<div class="back" style="float:left">
+<a href="cse.html"><input type="submit" value="Back" /></a>
+</div>
+<br /><br />
+<form action="searchResultSuccess.php" method="GET">
+</form>
+<table border="6" height="40" width="400" align="center" bgcolor="#CF0" bordercolor="#000">
+<tr>
+<td colspan="2" align="center"><h3>STUDENT DETAILS</h3></td>
+</tr>
+<tr>
+<td>Name:</td>
+<td><p>
+<?php
+echo $name;
+?></p>
+</td>
+</tr>
+<tr>
+<td>Roll no:</td>
+<td>
+<?php
+echo $rollno;
+?></td>
+</tr>
+<tr>
+<td>Quota:</td>
+<td><p>
+<?php
+echo $Quota;
+?></p>
+</td>
+</tr>
+<tr>
+<td>First Graduate:</td>
+<td><p>
+<?php
+echo $FirstGraduate;
+?></p>
+</td>
+</tr>
+<tr>
+<td>Receipt Number:</td>
+<td><p>
+<?php
+echo $ReceiptNo;
+?></p>
+</td>
+</tr>
+<tr>
+<td>DD Number:</td>
+<td><p>
+<?php
+echo $DDNo;
+?></p>
+</td>
+</tr>
+<tr>
+<td>Date:</td>
+<td><p>
+<?php
+echo $Date;
+?></p>
+</td>
+</tr>
+<tr>
+<td>Tuition Fee:</td>
+<td><p>
+<?php
+echo $TuitionFee;
+?></p>
+</td>
+</tr>
+<tr>
+<td>Other Fees:</td>
+<td><p>
+<?php
+echo $OtherFees;
+?></p>
+</td>
+</tr>
+<tr>
+<td>Book and Uniform:</td>
+<td><p>
+<?php
+echo $BookUniform;
+?></p>
+</td>
+</tr>
+<tr>
+<td>Bus Fees:</td>
+<td><p>
+  <?php
+echo $BusFees;
+?></p>
+</td>
+</tr>
+<tr>
+<td>Donation:</td>
+<td><p>
+<?php
+echo $Donation;
+?></p>
+</td>
+</tr>
+<tr>
+<td>Hostel Fee:</td>
+<td><p>
+<?php
+echo $HostelFee;
+?></p>
+</td>
+</tr>
+<tr>
+<td>Caution Deposits:</td>
+<td><p>
+<?php
+echo $CautionDeposits;
+?></p>
+</td>
+</tr>
+<tr>
+<td>Total:</td>
+<td><p>
+<?php
+echo $Total;
+?></p>
+</td>
+</tr>
+<tr>
+<td>Balance:</td>
+<td><p>
+<?php
+echo $Balance;
+?></p>
+</td>
+</tr>
+</table>
+</body>
+</html>

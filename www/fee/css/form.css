@@ -1,0 +1,48 @@
+.logout input[type="submit"]{
+	color: #FFFFFF;
+	margin-left:50px;
+	display:block;
+  padding: 7px 0;
+  width: 100px;
+  font-size: 13px;
+  font-weight: normal;
+	text-decoration-color: antiquewhite;
+  border: 10;
+  text-shadow: 0px 1px 0px rbga(255, 255, 255, 1);
+  background-color: rgba(0,0,0,0.50);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.back input[type="submit"]{
+	color: #FFFFFF;
+	display:block;
+  padding: 5px 0;
+  width:70px;
+  font-size: 13px;
+  font-weight:normal;
+  border: 10;
+  text-shadow: 0px 1px 0px rbga(255, 255, 255, 1);
+  background-color:rgba(0,0,0,0.50);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sub input[type="submit"]{
+	color: #FFFFFF;
+	display:block;
+  padding: 5px 0;
+  width:70px;
+  font-size: 13px;
+  font-weight":bold;
+  border: 10;
+  text-shadow: 0px 1px 0px rbga(255, 255, 255, 1);
+  background-color:rgba(0,0,0,0.50);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+TD {
+	font-family: Roboto;
+	color: antiquewhite;
+}

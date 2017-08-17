@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>library mangement</title>
+<style>
+.button {
+    position: relative;
+    background-color:#000;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+</style>
+</head>
+<body>
+<body background="cabinet.jpg">
+<div class="logo"><font size="20"><h1><i><center>Library</center></i></h1></font>
+<p><h2><center>The knowledge Room</center></h2></p></div>
+
+<p align="right">  <a href="index.html">
+ <button class="button" type="submit">Logout</button>
+  </a></p>
+
+<div id="Search">
+<center>
+<p><h4>Search for student log </h4></p>
+<form action="result.php" method="post">
+<input type="text" name="search"  required/>
+ <button class="button" type="submit">Search</button>
+</form>
+
+<p><h4>Search for book log </h4></p>
+<form action="bookresult.php" method="post">
+<input type="text" name="search"  required/>
+ <button class="button" type="submit">Search</button>
+</form>
+</center>
+</div>
+
+<p>
+  <div id="Update">
+  <center>
+ <b> <label for="username">Update Entry After issue of book : </label></b></br></br>
+  <a href="Update.html">
+  <button class="button" type="submit">Book Issue</button>
+  </a>
+  </center>
+  </div>
+</p>
+
+<p>
+  <div id="Create">
+  <center>
+<b><label for="username">Enter new student detail : 
+  </label></b></br></br>
+  <a href="Signup.html">
+ <button class="button" type="submit">Enter</button>
+  </a>
+  </center>
+  </div>
+</p>
+  
+
+<div id="footer"><center></br></br></br></br></br></br></br></br>
+<h3>copyright &copy M4</h3>
+</center></div>
+</body>
+</html>
+

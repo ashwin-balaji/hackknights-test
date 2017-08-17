@@ -1,0 +1,53 @@
+.body{
+	background-repeat:no-repeat;
+}
+.logout input[type="submit"]{
+	margin-left:50px;
+	display:block;
+  padding: 7px 0;
+  width: 130px;
+  font-size: 13px;
+  font-weight: normal;
+  border: 10;
+  text-shadow: 0px 1px 0px rbga(255, 255, 255, 1);
+  background-color: #f6ba35;
+  background-image: -webkit-linear-gradient(90deg, #eca418, #ffcd4e);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.back{
+}
+.back input[type="submit"]{
+	display:block;
+  padding: 5px 0;
+  width:70px;
+  font-size: 13px;
+  font-weight:normal;
+  border: 10;
+  text-shadow: 0px 1px 0px rbga(255, 255, 255, 1);
+  background-color:#C60;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(90deg, #eca418, #ffcd4e);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.choice{
+	background-color:#CC0;
+	width:25%;
+	height:190px;
+	margin-left:510px;
+}
+.choice input[type="submit"]{
+	margin-top:40px;
+	display:block;
+  padding: 7px 0;
+  width: 80px;
+  font-size: 13px;
+  font-weight: bold;
+  border: 10;
+  text-shadow: 0px 1px 0px rbga(255, 255, 255, 1);
+  background-color:#09F;
+    background-image: -webkit-linear-gradient(90deg, #eca418, #ffcd4e);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}

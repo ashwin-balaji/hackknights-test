@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+#main{
+	width:1340px;
+	height:auto;
+	margin:auto;
+}
+.logo{
+	width:300px;
+	height:70px;
+	float:center;
+}
+.footer{
+	width:1340px;
+	height:30px;
+	background:#666;
+}

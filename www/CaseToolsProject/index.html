@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="lib.css" type="text/css" />
+<style>
+.button {
+    position: relative;
+    background-color:#000;
+    border: none;
+    font-size: 15px;
+    color:#C0C0C0;
+    padding: 12px;
+    width: 150px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+</style>
+ </head>
+
+<title>library mangement</title>
+<body background="cabinet.jpg">
+<div class="logo"><font size="20"><h1><i><center>Library</i></h1></font></div>
+<p>
+<center><h2>The knowledge Room</h2></center>
+</p>
+
+<?php if($missing) :
+<?php endif; ?>
+<form action="login.php" method="post">
+    <div class="login-page1">
+    <h1><center>Login</center></h1>
+  <div class="form">
+    <form class="login-form"><center>
+ <p><label><b>Username :</b></label><input type="text" name="name" placeholder="username" required="required"/></p>
+   <p><label><b>Password  :</b></label><input type="password" name="password" placeholder="password" required="required"/></p></br>
+      <button class="button" type="submit">LOGIN</button>
+    </form>
+</center></form>
+  </div>
+</div>
+
+<div id="footer"><center></br></br></br></br></br></br></br></br></br></br></br>
+<h3>copyrights @ M4</h3>
+</center></div>
+</body>
+</html>
